@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src = "./components/clickEvts.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-sky id = "sky" src = "./assets/front.jpeg"></a-sky>
+
+            <a-entity
+                camera
+                wasd-controls
+                look-controls
+            >
+                <a-cursor></a-cursor>
+            </a-entity>
+
+            <a-box id = "room1" position = "-2.2 0.6 -3" rotation = "10 30 0" height = "0.5" click-evt color = "green">
+                <a-entity text = "value:Room 1; color:white; width:5" position = "2.1 0 0.5"></a-entity>
+            </a-box>
+
+            <a-box id = "room2" position = "0 0.6 -3" rotation = "10 0 0" height = "0.44" click-evt color = "green">
+                <a-entity text = "value:Room 2; color:white; width:5" position = "2.1 0 0.5"></a-entity>
+            </a-box>
+
+            <a-box id = "front" position = "0 -.6 -3" rotation = "-10 0 0" height = "0.44" click-evt color = "blue">
+                <a-entity text = "value:Front; color:white; width:5" position = "2.1 0 0.5"></a-entity>
+            </a-box>
+
+            <a-box id = "room3" position = "2.2 0.6 -3" rotation = "10 -29 0" height = "0.5" click-evt color = "green">
+                <a-entity text = "value:Living Room; color:white; width:4" position = "1.5 0 0.5"></a-entity>
+            </a-box>
+
+            <a-box id = "room4" position = "-2.2 -0.6 -3" rotation = "-10 30 0" height = "0.5" click-evt color = "green">
+                <a-entity text = "value:Kitchen; color:white; width:5" position = "2.1 0 0.5"></a-entity>
+            </a-box>
+
+            <a-box id = "room5" position = "2.2 -0.6 -3" rotation = "-10 -29 0" height = "0.5" click-evt color = "green">
+                <a-entity text = "value:Garage; color:white; width:5" position = "2.1 0 0.5"></a-entity>
+            </a-box>
+        </a-scene>
+    </body>
+</html>
